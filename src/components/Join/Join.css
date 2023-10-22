@@ -1,0 +1,67 @@
+.Join{
+    display: flex;
+    gap: 10rem;
+    padding: 0 2rem;
+}
+.left-j{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+}
+.left-j>hr{
+    position: absolute;
+    width: 10.5rem;
+    border: 2px solid var(--orange);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+.right-j{
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+.email-container{
+    display: flex;
+    right: 5rem;
+    gap: 3rem;
+    background-color: gray;
+    padding: 1rem 2rem;
+    margin-left: 11rem;
+    
+}
+.email-container>input{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    color: var(--ligthgray);
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.btn-join {
+    background-color: var(--orange);
+    color: white;
+}
+@media screen and (max-width:768px) {
+    .Join{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .left-j{
+        font-size: x-large;
+        margin-top: -11rem; 
+    }
+    .right-j{
+        padding: 2rem  ;
+        margin-right: 11rem;
+        
+    }
+    .btn-join{
+        width: 5rem;
+        padding: 0;   
+    }
+    
+    
+    
+}
